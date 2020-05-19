@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/tstyle.css">
+    <script type="text/javascript" >
+      function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  var y = document.forms["myForm"]["pwd"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;}
+    if (y == "") {
+    alert("Password must be filled out");
+    return false; 
+  
+}}
+    </script>
+  </head>
+  <body>
+    <form name="myform" onsubmit="return validateForm()">
+      <div class="login-box">
+        <h1>Login</h1>
+        <div class="textbox">
+          <i class="fas fa-user"></i>
+          <input type="text" name="fname" placeholder="Username">
+        </div>
+      
+        <div class="textbox">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="pwd" placeholder="Password">
+        </div>
+      
+        <input type="button" onclick="validateForm()" class="btn" value="Sign in">
+      </div>
+    </form>
+
+<
+  </body>
+</html>

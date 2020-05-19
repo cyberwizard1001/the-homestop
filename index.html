@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--login validation, use filter, display date
+
+<!-- HTML Final Evaluation-->
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>the HomeStop</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+<script>
+  new Darkmode().showWidget();
+  
+</script>
+
+<script type="text/javascript"> 
+  function display_c(){
+  var refresh=1000; // Refresh rate in milli seconds
+  mytime=setTimeout('display_ct()',refresh)
+  }
+  
+  function display_ct() {
+  var x = new Date()
+  document.getElementById('ct').innerHTML = x;
+  display_c();
+   }
+  </script>
+
+<script type="text/javascript">
+  document.getElementById('searchform').onsubmit = function() {
+      window.location = 'http://www.google.com/search?q=site:thehomestop.netlify.app ' + document.getElementById('search').value;
+      return false;
+  }
+  </script>
+  
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+ 
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ </head>
+
+<body data-spy="scroll" data-target="#navbar-example" onload=display_ct();>
+
+  <form id="sarchform" class="search2" method="get" action="index.html" />
+
+  
+  <header id="header" class="fixed-top">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>the</span>HomeStop</a></h1>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          
+          
+          <li><a href="#portfolio">Places</a></li>
+          
+          <li class="drop-down"><a href="">Your Account</a>
+            <ul>
+              <li><a href="/2/snake-highlight/dist/index.html">Log In</a></li>
+              <li><a href="/1/progressive-sign-up/dist/index.html">Sign Up</a>
+                </li>
+            </ul>
+          <li><a href="#contact">Contact</a></li>
+
+          <!--<li><input id="search" type="text" placeholder="Search.."></li>-->  
+
+          <li><span style="margin-left:35%; margin-top: -2px;" id='ct' ></span></li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  
+  <div id="home" class="slider-area">
+    <div class="bend niceties preview-2">
+      <div id="ensign-nivoslider" class="slides">
+        <img src="assets/img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
+        <img src="assets/img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
+        <img src="assets/img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
+      </div>
+
+     
+      <div id="slider-direction-1" class="slider-direction slider-one">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+     
+                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">Pick homes you like, all by yourself! </h2>
+                </div>
+     
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">Hazzle free, no broker home hunting</h1>
+                </div>
+     
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">Our Services</a>
+                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div id="slider-direction-2" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+             <div class="slider-content text-center">
+      
+                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">Pick homes you like, all by yourself! </h2>
+                </div>
+      
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">Hazzle free, no broker home hunting</h1>
+                </div>
+      
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">Our Services</a>
+                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="slider-direction-3" class="slider-direction slider-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="slider-content">
+        
+                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <h2 class="title1">Pick homes you like, all by yourself!</h2>
+                </div>
+        
+                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                  <h1 class="title2">Hazzle free, no broker home hunting</h1>
+                </div>
+        
+                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                  <a class="ready-btn right-btn page-scroll" href="#services">Our Services</a>
+                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    
+    <div id="about" class="about-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>About HomeStop</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="well-left">
+              <div class="single-well">
+                <a href="#">
+                  <img src="assets/img/about/1.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="well-middle">
+              <div class="single-well">
+                <a href="#">
+                  <h4 class="sec-head">The one stop-shop for all your housing needs</h4>
+                </a>
+                <p>
+                  We offer the best in class home hunting experience, from the comfort of your home. Let us know of the property you want, and we'll have it ready for you to come and settle in. No legal hassles, all legal terms will be verified by our crack team of lawyers.  
+                  Service imparallel to anything that's been in offer to date. Need furniture? No problemo! We have our own furniture store, where you can mix and match as per requirement.
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa fa-check"></i> Multiple cities
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i> Affordable homes
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i> No legal obligations
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i> No unnecessary broker charges
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i> Perfect furniture
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="services" class="services-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline services-head text-center">
+              <h2>Our Services</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+        
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-map-marker"></i>
+                  </a>
+                  <h4>Locality based</h4>
+                  <p>
+                    Search filters include options to look for homes from selected localities, with localities graded in terms of friendliness, transport options and ambience.
+                  </p>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-camera-retro"></i>
+                  </a>
+                  <h4>Look for what you want</h4>
+                  <p>
+                    Choose either 1/2/3 BHK homes, as per your requirements. 
+                  </p>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+          
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-chevron-up"></i>
+                  </a>
+                  <h4>Legal team</h4>
+                  <p>
+                    Our legal team will look through all sale related documents to ensure the customer is not being cheated on in any way.
+                  </p>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+          
+            <div class=" about-move">
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-code"></i>
+                  </a>
+                  <h4>Engineers' support </h4>
+                  <p>
+                    Our engineers will look through the home, making sure it's safe for purchase. Want something modified? Let us know! They will take of it for you.
+                  </p>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-sm-4 col-xs-12" style="float:right;">
+          
+            <div class=" about-move" >
+              <div class="services-details">
+                <div class="single-services">
+                  <a class="services-icon" href="#">
+                    <i class="fa fa-quote-right"></i>
+                  </a>
+                  <h4>24/7 Support</h4>
+                  <p>
+                    Have trouble navigating the site? We have a 24/7 support team that will take you through exactly what you need to do to get the home of your dreams.
+                  </p>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
+              
+      </div>
+    </div>
+
+    <br><br>
+
+    
+    <div class="reviews-area hidden-xs">
+      <div class="work-us">
+        <div class="work-left-text">
+          <a href="#">
+            <img src="assets/img/about/2.jpg" alt="">
+          </a>
+        </div>
+        <div class="work-right-text text-center">
+          <h2>Get in touch!</h2>
+          <h5>Get your own dream home today.</h5>
+          <a href="#contact" class="ready-btn scrollto">Contact us</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div id="portfolio" class="portfolio-area area-padding fix">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Cities</h2>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row awesome-project-content">
+        
+
+          <div class="col-md-4 col-sm-4 col-xs-12 design development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href=""><img src="assets/img/portfolio/1.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    
+                      <a href="/nithish/delhi/index.html"><h4>Delhi</h4></a>
+                      
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+          <div class="col-md-4 col-sm-4 col-xs-12 photo">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="/sathwik/main_page_chennai.html"><img src="assets/img/portfolio/2.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    
+                      <a href="/sathwik/main_page_chennai.html"><h4>Chennai</h4></a>
+                     
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+
+          <div class="col-md-4 col-sm-4 col-xs-12 design">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="assets/img/portfolio/3.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    
+                    <a href="/nanthan/MUMBAI.html"><h4>Mumbai</h4></a>
+                      
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+
+          <div class="col-md-4 col-sm-4 col-xs-12 photo development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="#"><img src="assets/img/portfolio/4.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    
+                    <a href="/nithish/hyderabad/index.html"><h4>Hyderabad</h4></a>  
+                      
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+
+          <div class="col-md-4 col-sm-4 col-xs-12 development">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href="/sathwik/main page kochi.html"><img src="assets/img/portfolio/5.jpg" alt="" /></a>
+                <div class="add-actions text-center text-center">
+                  <div class="project-dec">
+                   
+                    <a href="/sathwik/main page kochi.html"><h4>Kochi</h4></a>
+                      
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-md-4 col-sm-4 col-xs-12 design photo">
+            <div class="single-awesome-project">
+              <div class="awesome-img">
+                <a href=""><img src="assets/img/portfolio/6.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                   
+                      <a href="/padmaja/a1.html"><h4>Furniture</h4></a>
+                      
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="pricing" class="pricing-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Pricing Table</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list active">
+              
+              <h3>Free <br /> <span>Rs. 0 / month</span></h3>
+              <ol>
+                <li class="check">View homes</li>
+                <li class="check">Get quotes</li>
+                <li class="check">Communication with seller</li>
+                <li class="check cross">Contact details</li>
+                <li class="check cross">Engineers' feedback</li>
+                <li class="check cross">Legal advice</li>
+                <li class="check cross">Completion of sale</li>
+                <li class="check cross">Call Support</li>
+              </ol>
+              <button onclick="/1/progressive-sign-up/dist/index.html">sign up now</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list active">
+              <span class="saleon">top sale</span>
+              <h3>standard <br /> <span>Rs. 50 / month</span></h3>
+              <ol>
+                <li class="check">View homes</li>
+                <li class="check">Get quotes</li>
+                <li class="check">Communication with seller</li>
+                <li class="check">Contact details</li>
+                <li class="check cross">Engineers' feedback</li>
+                <li class="check cross">Legal advice</li>
+                <li class="check cross">Completion of sale</li>
+                <li class="check cross">Call Support</li>
+              </ol>
+              <button onclick="/1/progressive-sign-up/dist/index.html">sign up now</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list">
+              <h3>premium <br /> <span>Rs. 150 / month</span></h3>
+              <ol>
+                <li class="check">View homes</li>
+                <li class="check">Get quotes</li>
+                <li class="check">Communication with seller</li>
+                <li class="check">Contact details</li>
+                <li class="check ">Engineers' feedback</li>
+                <li class="check">Legal advice</li>
+                <li class="check">Completion of sale</li>
+                <li class="check ">Call Support</li>
+
+              </ol>
+              <button onclick="/1/progressive-sign-up/dist/index.html">sign up now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="testimonials-area">
+      <div class="testi-inner area-padding">
+        <div class="testi-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              
+              <div class="testimonial-content text-center">
+                <a class="quate" href="#"><i class="fa fa-quote-right"></i></a>
+                
+                <div class="owl-carousel testimonial-carousel">
+                  <div class="single-testi">
+                    <div class="testi-text">
+                      <p>
+                        “I just wanted to share a quick note and let you know that you guys do a really good job.<br> I’m glad I decided to work with you, never had any problems at all.
+                      </p>
+                      <h6>Ananya H</h6>
+                    </div>
+                  </div>
+                  
+                  <div class="single-testi">
+                    <div class="testi-text">
+                      <p>
+                        Selecting our home going through a different dealer for every home was a hassle.<br> Which is why I decided to give the HomeStop guys a trial.  And the experience was rewarding.
+                      </p>
+                      <h6>Nathan R</h6>
+                    </div>
+                  </div>
+                  
+                  <div class="single-testi">
+                    <div class="testi-text">
+                      <p>
+                        I've always been dreading the process of buying a home,  due to the time constraints and <br>the number of pitfalls that exist in the industry. Thanks to HomeStop, I now reside in a physically <br> sound home AND actually had fun selecting it!
+              
+                      </p>
+                      <h6>Nithish M</h6>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    
+    <div id="contact" class="contact-area">
+      <div class="contact-inner area-padding">
+        <div class="contact-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline text-center">
+                <h2>Contact us</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fa fa-mobile"></i>
+                  <p>
+                    Call: +91 90000 90000 <br>
+                    <span>24/7, 365 days a year</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fa fa-envelope-o"></i>
+                  <p>
+                    Email: info@thehomestop.com<br>
+                    <span>Web: www.homestop.com</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fa fa-map-marker"></i>
+                  <p>
+                    Location: Amrita Vishwa Vidyapeetam, Amrita Nagar, Coimbatore<br>
+                    <span>641022, India</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.3269681694674!2d76.9440005141971!3d11.088990892109862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f643684fe3b5%3A0xc26c06419ed7c74e!2sArunkumar%20Home%2C%20NGGO%20Colony%2C%20Thudiyalur%2C%20Tamil%20Nadu%20641022!5e0!3m2!1sen!2sin!4v1589515311968!5m2!1sen!2sin" width="500" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              
+            </div>
+           
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="form contact-form">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validate"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><span>the</span>HomeStop</h2>
+                </div>
+                </div></div></div></div></div></div>
+
+             
+  
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head" style="float: right;">
+                <h4>Contact information</h4>
+                
+                <div class="footer-contacts">
+                  <p><span>Tel:</span> +91 xxxxx xxxxx</p>
+                  <p><span>Email:</span> sales@thehomestop.com</p>
+                  <p><span>Contact Hours:</span> All day</p>
+                  <p><span>Want to take on a franchise? Contact us :)</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+     <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>the HomeStop</strong>. All Rights Reserved
+              </p>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/appear/jquery.appear.js"></script>
+  <script src="assets/vendor/knob/jquery.knob.js"></script>
+  <script src="assets/vendor/parallax/parallax.js"></script>
+  <script src="assets/vendor/wow/wow.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
